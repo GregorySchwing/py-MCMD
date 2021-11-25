@@ -1,0 +1,23 @@
+*************************************************
+date and time (start) = 2021-11-24 20:01:45.498933 
+************************************************* 
+*************************************************
+namd_bin_file = /wsu/home/go/go24/go2432/hybridSims/py-MCMD/required_data/bin/NAMD_CPU/namd2 
+************************************************* 
+*************************************************
+gomc_bin_file = /wsu/home/go/go24/go2432/hybridSims/py-MCMD/required_data/bin/GOMC_CPU_GCMC 
+************************************************* 
+*************************************************
+The NAMD FFT file not deteted from Run 0 in Box 0 
+************************************************* 
+*************************************************
+The NAMD FFT file was deleted from Run 0 in Box 0 
+************************************************* 
+*************************************************
+*************************************************
+run_no = 0 (START)
+************************************************* 
+NAMD simulation data for simulation number 0 in box 0 is completed 
+*************************************************
+Running the initial NAMD simulations now. 
+Waiting for initial NAMD simulation to finish. 

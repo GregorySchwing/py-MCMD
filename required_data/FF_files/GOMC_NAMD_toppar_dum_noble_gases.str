@@ -1,0 +1,66 @@
+* Toplogy and parameter information for helium, neon and a dummy atom.
+*
+
+!Testcase
+!test_dum_nobel_gases.inp
+
+!test "append" to determine if previous	toppar files have been read and
+!add append to "read rtf card" if true
+
+!We're exploiting what is arguably a bug in the parser. On the left hand side,
+!the quotes have proirity, so NAT is correctly substituted. On the right hand
+!side, the ? has priority and NATC" (sic) is not a valid substitution...
+
+* Topology for helium, neon and a dummy atom.
+*
+
+BONDS
+!
+!V(bond) = Kb(b - b0)**2
+!
+!Kb: kcal/mole/A**2
+!b0: A
+!
+! Kb (kcal/mol) = Kb (K) * Boltz. const.; (9999999999 if no stretching)
+!
+!atom type     Kb              b0        description
+
+
+
+ANGLES
+!
+!V(angle) = Ktheta(Theta - Theta0)**2
+!
+!V(Urey-Bradley) = Kub(S - S0)**2
+!
+!Ktheta: kcal/mole/rad**2
+!Theta0: degrees
+!Kub: kcal/mole/A**2 (Urey-Bradley)
+!S0: A
+!
+! Ktheta (kcal/mol) = Ktheta (K) * Boltz. const.
+!
+!atom types         Ktheta       Theta0   Kub(?)  S0(?)
+
+
+DIHEDRALS
+!
+!V(dihedral) = Kchi(1 + cos(n(chi) - delta))
+!
+!Kchi: kcal/mole
+!n: multiplicity
+!delta: degrees
+!
+! Kchi (kcal/mol) = Kchi (K) * Boltz. const.
+! Boltzmann = 0.0019872041 kcal / (mol * K)
+!atom types           Kchi        n    delta              description
+
+NONBONDED
+
+DUM    0.000000  -0.000000     0.000000
+HE     0.000000  -0.021270     1.480000
+NE     0.000000  -0.085450     1.530000
+
+!END
+
+!return
